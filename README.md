@@ -58,9 +58,9 @@ gofmt -w -s .
 ```
 
 ## AUTHORS
-- [@hanapiko](https://learn.zone01kisumu.ke/git/hanapiko)
+- [hanapiko](https://learn.zone01kisumu.ke/git/hanapiko)
 
-- [@weakinyi](https://learn.zone01kisumu.ke/git/weakinyi)
+- [weakinyi](https://learn.zone01kisumu.ke/git/weakinyi)
 
-- [@somotto](https://learn.zone01kisumu.ke/git/somotto)
+- [somotto](https://learn.zone01kisumu.ke/git/somotto)
 
