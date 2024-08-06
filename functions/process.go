@@ -15,7 +15,7 @@ var (
 func Readfile(fileName string) ([]string, error) {
 	err := VerifyFileChecksum("", fileName)
 	if err != nil {
-		if errors.Is(err, os.ErrNotExist) {
+		if errors.Is(err, ErrFileMissing) {
 			return nil, ErrFileMissing
 		}
 		return nil, ErrFileCorrupted
