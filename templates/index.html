@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>ASCII Art Generator</h1>
+    </header>
+    <main>
+        <form action="/ascii-art" method="post">
+            <label for="text">Enter your text:</label>
+            <textarea id="text" name="text" rows="4" required></textarea>
+            
+            <label for="banner">Choose a banner style:</label>
+            <select id="banner" name="banner">
+                <option value="standard">Standard</option>
+                <option value="shadow">Shadow</option>
+                <option value="thinkertoy">Thinkertoy</option>
+            </select>
+            
+            <input type="submit" value="Generate ASCII Art">
+        </form>
+        
+        {{if .Result}}
+        <section>
+            <h2>Generated ASCII Art:</h2>
+            <div class="ascii-art-container">
+                <pre class="ascii-art">{{.Result}}</pre>
+            </div>
+        </section>
+        {{end}}
+    </main>
+    <footer>
+        <p>&copy; 2024 ASCII Art Generator</p>
+        <div class="developers">
+            <h3>Developers:</h3>
+            <ul>
+                <li>
+                    <a href="https://learn.zone01kisumu.ke/git/hanapiko" target="_blank">
+                        <img src="https://learn.zone01kisumu.ke/git/avatars/3b61fe3cb4157676f224a300e1d25c3c?size=870" alt="hanapiko" class="dev-image">
+                        <span>hanapiko</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://learn.zone01kisumu.ke/git/weakinyi" target="_blank">
+                        <img src="https://learn.zone01kisumu.ke/git/avatars/af88fe70d9ca33e6e9e8a7a875fcae33?size=870" alt="weakinyi" class="dev-image">
+                        <span>weakinyi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://learn.zone01kisumu.ke/git/somotto" target="_blank">
+                        <img src="https://learn.zone01kisumu.ke/git/avatars/cd77cdba7e1baec4685e422b67f045f2?size=870" alt="somotto" class="dev-image">
+                        <span>somotto</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
