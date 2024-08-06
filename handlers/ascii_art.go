@@ -20,11 +20,6 @@ func AsciiArtHandler(w http.ResponseWriter, r *http.Request) {
 	text := r.FormValue("text")
 	banner := r.FormValue("banner")
 
-	if text == "" {
-		renderErrorPage(w, "400\nBad Request: Missing text", http.StatusBadRequest)
-		return
-	}
-
 	if !functions.InputString(text) {
 		renderErrorPage(w, "400\nBad Request: Input contains non-ASCII characters", http.StatusBadRequest)
 		return
