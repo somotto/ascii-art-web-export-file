@@ -12,13 +12,13 @@ func ServeStatic(w http.ResponseWriter, r *http.Request) {
 	info, err := os.Stat(file)
 	if err != nil {
 		// file is not in the directory
-		renderErrorPage(w, "File not found", http.StatusNotFound)
+		renderErrorPage(w, "404 File not found", http.StatusNotFound)
 		return
 	}
 
 	if info.IsDir() {
 		// if it is a directory
-		renderErrorPage(w, "File not found", http.StatusNotFound)
+		renderErrorPage(w, "404 File not found", http.StatusNotFound)
 		return
 	}
 
