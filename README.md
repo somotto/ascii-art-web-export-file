@@ -64,3 +64,6 @@ gofmt -w -s .
 
 - [somotto](https://learn.zone01kisumu.ke/git/somotto)
 
+## LICENSE
+This project is licensed under the terms of the [MIT License](./LICENSE).
+
