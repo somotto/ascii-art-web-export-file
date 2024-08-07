@@ -46,6 +46,8 @@ label {
   display: block;
   margin-bottom: 5px;
   color: #265a5c;
+  font-size: large;
+  font-weight: bolder;
 }
 
 input[type="text"], textarea {
