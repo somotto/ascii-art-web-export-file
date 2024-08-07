@@ -57,7 +57,7 @@ input[type="text"], textarea {
   border: 1px solid #c7efcf;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: x-large;
+  font-size: larger;
 }
 select {
   width: 100%;
