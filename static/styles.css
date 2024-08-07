@@ -1,6 +1,6 @@
 :root {
   --primary-color: #141614;
-  --secondary-color: #101110;
+  --secondary-color: #209eb4;
   --background-color: #e1f6f4;
   --text-color: #333;
   --spacing: 20px;
@@ -16,6 +16,7 @@ body, html {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
+  margin: 20px;
 }
 
 header {
@@ -47,13 +48,24 @@ label {
   color: #265a5c;
 }
 
-input[type="text"], select, textarea {
+input[type="text"], textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #c7efcf;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: x-large;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #c7efcf;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: bold;
 }
 
 input[type="submit"] {
