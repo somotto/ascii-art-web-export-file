@@ -19,11 +19,11 @@ body, html {
 }
 
 /* Main page styles */
-.container {
+/* .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-}
+} */
 
 header {
   text-align: center;
@@ -46,20 +46,12 @@ form {
   padding: 20px;
   border-radius: 5px;
   margin-bottom: var(--spacing);
+
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-}
-
-input[type="text"], select, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -70,10 +62,6 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: var(--secondary-color);
 }
 
 .ascii-art-container {
@@ -194,7 +182,7 @@ footer {
   font-size: 1.1em;
 }
 
-.button {
+/* .button {
   display: inline-block;
   background-color: var(--primary-color);
   color: white;
@@ -206,7 +194,7 @@ footer {
 
 .button:hover {
   background-color: var(--secondary-color);
-}
+} */
 
 @media (max-width: 600px) {
   .container {
