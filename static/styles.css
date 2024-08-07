@@ -1,7 +1,7 @@
 :root {
   --primary-color: #141614;
   --secondary-color: #101110;
-  --background-color: #f7f6e9;
+  --background-color: #e1f6f4;
   --text-color: #333;
   --spacing: 20px;
   --error-bg: #c2db7d;
@@ -28,7 +28,7 @@ h1 {
 }
 
 main {
-  background-color: rgb(233, 234, 210);
+  background-color: #bfe9db;
   padding: var(--spacing);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -44,19 +44,20 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
+  color: #265a5c;
 }
 
 input[type="text"], select, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #c7efcf;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 input[type="submit"] {
-  background-color: var(--primary-color);
+  background-color: #062743;
   color: white;
   padding: 10px 20px;
   border: none;
