@@ -4,9 +4,9 @@
   --background-color: #e1f6f4;
   --text-color: #333;
   --spacing: 20px;
-  --error-bg: #c2db7d;
-  --error-border: #ef9a9a;
-  --error-text: #c62828;
+  --error-bg: #95f7e6;
+  --error-border: #1c3435;
+  --error-text: #0e3838;
 }
 
 body, html {
@@ -173,7 +173,7 @@ footer {
 }
 
 .error-content {
-  background-color: rgb(215, 201, 201);
+  background-color: rgb(90, 177, 155);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
