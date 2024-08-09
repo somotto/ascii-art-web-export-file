@@ -1,14 +1,16 @@
 package handlers
 
 import (
-	"ascii/functions"
 	"errors"
 	"html/template"
 	"net/http"
+
+	"ascii/functions"
 )
 
 type PageData struct {
-	Result string
+	Result       string
+	ErrorMessage string
 }
 
 func AsciiArtHandler(w http.ResponseWriter, r *http.Request) {
@@ -60,5 +62,6 @@ func renderErrorPage(w http.ResponseWriter, message string, statusCode int) {
 		http.Error(w, "500 Internal Server Error", http.StatusInternalServerError)
 		return
 	}
-	tmpl.Execute(w, struct{ ErrorMessage string }{ErrorMessage: message})
+	value := PageData{ErrorMessage: message}
+	tmpl.Execute(w, value)
 }
