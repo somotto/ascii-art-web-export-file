@@ -37,10 +37,6 @@ func TestHomeHandler(t *testing.T) {
 				t.Errorf("HomeHandler() status = %v, want %v", resp.Code, tt.expectedStatus)
 				t.Logf("Response Body: %s", resp.Body.String())
 			}
-
-			// if tt.expectedBody != "" && resp.Body.String() != tt.expectedBody {
-			// 	t.Errorf("HomeHandler() body = %v, want %v", resp.Body.String(), tt.expectedBody)
-			// }
 		})
 	}
 }
