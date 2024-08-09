@@ -45,23 +45,23 @@ func AsciiArtHandler(w http.ResponseWriter, r *http.Request) {
 
 	result := functions.AsciiArt(text, lines)
 
-	tmpl, err := template.ParseFiles("templates/index.html")
+	template, err := template.ParseFiles("templates/index.html")
 	if err != nil {
 		renderErrorPage(w, "500 Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 
 	data := PageData{Result: result}
-	tmpl.Execute(w, data)
+	template.Execute(w, data)
 }
 
 func renderErrorPage(w http.ResponseWriter, message string, statusCode int) {
 	w.WriteHeader(statusCode)
-	tmpl, err := template.ParseFiles("templates/error.html")
+	template, err := template.ParseFiles("templates/error.html")
 	if err != nil {
 		http.Error(w, "500 Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 	value := PageData{ErrorMessage: message}
-	tmpl.Execute(w, value)
+	template.Execute(w, value)
 }
