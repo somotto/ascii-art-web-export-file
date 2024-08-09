@@ -14,10 +14,10 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 		renderErrorPage(w, "404 Page Not Found", http.StatusNotFound)
 		return
 	}
-	tmpl, err := template.ParseFiles("templates/index.html")
+	template, err := template.ParseFiles("templates/index.html")
 	if err != nil {
 		renderErrorPage(w, "500 Internal Server Error", http.StatusInternalServerError)
 		return
 	}
-	tmpl.Execute(w, nil)
+	template.Execute(w, nil)
 }
