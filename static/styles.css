@@ -50,8 +50,10 @@ label {
   font-weight: bolder;
 }
 
-input[type="text"], textarea {
-  width: 100%;
+textarea {
+  
+  max-width: 100%;
+  width: 1111px;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #c7efcf;
