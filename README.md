@@ -1,5 +1,5 @@
-# ASCII-ART-WEB-STYLIZE
-* Ascii-art-web-stylize is a project version of ascii-art-web only that it consists of making the site; more appealing, interactive and intuitive.
+# ASCII-ART-WEB-DOCKERIZE
+* Ascii-art-web-dockerize is a project version of ascii-art-web only that it's contained in a docker file.
 
 ## Features
 * It should be user friendly.
@@ -29,12 +29,12 @@
 To clone this repository, copy the command below on your terminal:
 
 ```bash
-git clone https://learn.zone01kisumu.ke/git/weakinyi/ascii-art-web-stylize.git
+git clone https://learn.zone01kisumu.ke/git/weakinyi/ascii-art-web-dockerize.git
 ```
 
 Go to the project directory
 ```bash
-cd ascii-art-web-stylize
+cd ascii-art-web-dockerize
 ```
 
 ## Usage
