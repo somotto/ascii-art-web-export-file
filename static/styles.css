@@ -61,6 +61,7 @@ textarea {
   font-size: larger;
   resize: none;
 }
+
 select {
   width: 100%;
   padding: 10px;
@@ -72,7 +73,7 @@ select {
   font-weight: bold;
 }
 
-input[type="submit"] {
+.generate {
   background-color: #062743;
   color: white;
   padding: 10px 20px;
@@ -80,6 +81,11 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.reset {
+  margin-top: 200px;
+  text-decoration: none;
 }
 
 input[type="submit"]:hover {
