@@ -1,35 +1,19 @@
 # ASCII-ART-WEB-DOCKERIZE
-* Ascii-art-web-dockerize is a project version of ascii-art-web only that it's contained in a docker file.
+* This project demonstrates how to create a simple web server using Go, containerize it with Docker, and manage Docker images and containers. It follows Docker best practices and applies metadata to Docker objects while also managing unused objects efficiently.
 
 ## Features
-* It should be user friendly.
-* Give more feedback to the user.
-* Input Handling :-  Accepts strings containing numbers, letters, a space, special characters, and a newline character.
-* ASCII Representation:- Converts the input string into a graphical representation using ASCII characters.
-* Error Handling:- Implements robust error handling to ensure reliable performance.
-* Webpage allows use of different banners which are i.e 
-   - shadow
-   - standard
-   - thinkertoy
-* Our main page contains:
-    - text input
-    - select object to switch between banners
-    - button, which sends a POST request to '/ascii-art' and outputs the result on the page.
-
-## Implementation details: Algorithm
-- This project is written in Go programming language.
-- The program contains different directories containing specific functions which interconnect to enable achieve the goal of the project.
-* some examples of methods used were :
-    - struct
-    - slices
-    - interfaces
+- **Containerization**: Docker
+- **Components**:
+  - **Dockerfile**: Defines how to build the Docker image.
+  - **Docker Image**: A snapshot of the application environment.
+  - **Docker Container**: A running instance of the Docker image.
 
 ## Instructions to run locally
 
 To clone this repository, copy the command below on your terminal:
 
 ```bash
-git clone https://learn.zone01kisumu.ke/git/weakinyi/ascii-art-web-dockerize.git
+git clone https://learn.zone01kisumu.ke/git/hanapiko/ascii-art-web-dockerize.git
 ```
 
 Go to the project directory
@@ -39,22 +23,14 @@ cd ascii-art-web-dockerize
 
 ## Usage
 
-- To run the program, use the command below;
-```go
-go run .
-```
-- Then  ctrl + click <link> Example:  http://localhost:8080  to open in the browser.
+- To build the image, use the command below;
 
-### Running Tests
-To run unit tests, navigate to the project directory and run the following command:
 ```bash
-go test -v
+docker build -t <imageName> .
 ```
-
-### Formatting program
-To format the program, navigate to the project directory and run the following command:
+- To create and run the container use the command below;
 ```bash
-gofmt -w -s .
+docker run -d -p hostport:containerport --name <containerName> <imageName>
 ```
 
 ## AUTHORS
