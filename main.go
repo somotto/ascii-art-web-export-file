@@ -22,6 +22,8 @@ func main() {
 	// Register the handler for the ASCII art generation.
 	http.HandleFunc("/ascii-art", handlers.AsciiArtHandler)
 
+	http.HandleFunc("/export", handlers.ExportHandler) 
+
 	port := ":8000"
 
 	fmt.Printf("Server is running on http://localhost%s", port)
