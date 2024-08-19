@@ -84,7 +84,7 @@ select {
 }
 
 .export {
-  background-color: #4CAF50;
+  background-color: #062743;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -95,7 +95,7 @@ select {
 }
 
 .export:hover {
-  background-color: #45a049;
+  background-color: #3695ad;
 }
 
 .reset {
