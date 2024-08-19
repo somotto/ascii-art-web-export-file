@@ -36,6 +36,10 @@
             <div class="ascii-art-container">
                 <pre class="ascii-art">{{.Result}}</pre>
             </div>
+            <form action="/export" method="post">
+                <input type="hidden" name="ascii_art" value="{{.Result}}">
+                <input type="submit" value="Export ASCII Art" class="export">
+            </form>
         </section>
         {{end}}
     </main>
