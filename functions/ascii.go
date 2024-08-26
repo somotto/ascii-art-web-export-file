@@ -11,7 +11,7 @@ func AsciiArt(input string, inputFile []string) string {
 
 	for _, line := range lines {
 		if line == "" {
-			result.WriteString(strings.Repeat("\n", 8))
+			result.WriteString(strings.Repeat("\n", 1))
 		} else {
 			for i := 0; i < 8; i++ {
 				for _, char := range line {
